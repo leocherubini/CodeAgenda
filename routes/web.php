@@ -11,4 +11,6 @@
 |
 */
 
-$app->get('/', ['as'=>'agenda.index', 'uses'=>'IndexController@index']);
+$app->get('/', ['as'=>'index', 'uses'=>'IndexController@index']);
+
+$app->get('agendas', ['as'=>'agenda.index', 'uses'=>'AgendaController@index']);
